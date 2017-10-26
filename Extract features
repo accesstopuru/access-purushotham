@@ -1,0 +1,9 @@
+from scipy import misc
+import matplotlib.pyplot as plt
+face = misc.face()
+face = misc.face(gray=True)
+face= misc.imread(...'directory of your image')
+lx,ly,lz= face.shape
+crop_face= face[lx//4.5 - lx//4.5 , ly//4: - ly//4] # it depends on your requirement..
+plt.imshow(crop_face)
+plt.show()
